@@ -130,8 +130,8 @@ const Input: React.FC<InputProps> = (props) => {
       <Box style={{ display: 'flex', height: '300px', width: '100%', marginBottom }}>
         <Box style={{ width: '100% ' }}>
           <MapContainer
-            zoom={mapProps.zoom}
-            center={mapProps.center as LatLngTuple}
+            zoom={ mapProps.zoom}
+            center={ props.value?.lat && props.value?.lng ? [props.value?.lat, props.value?.lng ] :  mapProps.center as LatLngTuple}
             ref={setMap}
             style={{ height: '300px', zIndex: 299 }}
           >

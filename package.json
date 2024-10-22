@@ -1,5 +1,5 @@
 {
-  "version": "0.0.0",
+  "version": "0.0.2",
   "keywords": [],
   "type": "commonjs",
   "exports": {
@@ -67,16 +67,17 @@
     "displayName": "Geo Data",
     "description": "geo data"
   },
-  "name": "geodata",
+  "name": "strapi-geodata",
   "description": "geo data",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com//red-made.git"
+    "url": "https://github.com/red-made/strapi-geodata"
   },
   "bugs": {
-    "url": "https://github.com//red-made/issues"
+    "url": "https://github.com/red-made/strapi-geodata/issues"
   },
-  "homepage": "https://github.com//red-made#readme",
-  "author": "red-made <info@red-made.com>"
+  "homepage": "https://github.com/red-made/strapi-geodata",
+  "author": "red-made <info@red-made.com>",
+  "main": "index.js"
 }
