@@ -38,8 +38,7 @@ To allow all Maps assets to load correctly, customize the strapi::security middl
 ```javascript
 export default [
   // ...
-  //'strapi::security', 
-  {
+ {
     name: 'strapi::security',
     config: {
       contentSecurityPolicy: {
@@ -57,6 +56,7 @@ export default [
             "data:",
             "https://*.basemaps.cartocdn.com",
             "https://tile.openstreetmap.org",
+            "https://*.tile.openstreetmap.org",
           ],
           "img-src": [
             "'self'",
@@ -64,12 +64,12 @@ export default [
             "data:",
             "https://*.basemaps.cartocdn.com",
             "market-assets.strapi.io",
-            "https://tile.openstreetmap.org",
+            "https://*.tile.openstreetmap.org",
           ],
         },
       },
     },
-  },
+  },  
   // ...
 ];
 ```
@@ -84,16 +84,5 @@ npm install strapi-geodata
 
 ```bash
 yarn add strapi-geodata
-```
-
-then in config/plugins:
-```Js
-export default () => ({
-  'geodata': {
-    enabled: true,
-    resolve: './src/plugins/strapi-geodata'
-  },
-});
-
 ```
 
