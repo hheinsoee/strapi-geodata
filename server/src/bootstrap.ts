@@ -13,8 +13,8 @@ const bootstrap = ({ strapi }: { strapi: Core.Strapi }) => {
           event.params.data.lng = event.params.data[key]?.lng;
           if (event.params.data.lat && event.params.data.lng) {
             event.params.data.geohash = geohash.encode(event.params.data.lat, event.params.data.lng);
-            console.log('geohash neighbors', geohash.neighbors(event.params.data.geohash));
-            console.log('geohash neighbors', geohash.neighbors(event.params.data.geohash.substr(0, 6)));
+            // console.log('geohash neighbors', geohash.neighbors(event.params.data.geohash));
+            // console.log('geohash neighbors', geohash.neighbors(event.params.data.geohash.substr(0, 6)));
           }
         }
       }
