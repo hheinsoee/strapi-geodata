@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import L from 'leaflet';
 import type { LatLngTuple, LeafletMouseEvent } from 'leaflet';
 import PluginIcon from './../components/PluginIcon';
-import { version } from '../package.json';
+import { version } from './../../../package.json';
 
 import {
   Box,

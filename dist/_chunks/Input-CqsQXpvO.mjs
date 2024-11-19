@@ -2,9 +2,10 @@ import { jsxs, jsx } from "react/jsx-runtime";
 import { useState, useRef, useCallback, useEffect } from "react";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import L from "leaflet";
-import { F as ForwardRef } from "./index-CSvQuzRV.mjs";
+import { F as ForwardRef } from "./index-VBZB2FIh.mjs";
 import { Box, Typography, TextInput, Button, JSONInput } from "@strapi/design-system";
 import "leaflet/dist/leaflet.css";
+const version = "0.1.01";
 const iconUrl = "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png";
 const iconRetinaUrl = "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png";
 const shadowUrl = "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png";
@@ -82,7 +83,9 @@ const Input = (props) => {
     /* @__PURE__ */ jsxs(Typography, { variant: "delta", style: { marginBottom, display }, children: [
       /* @__PURE__ */ jsx(ForwardRef, { style: { width: "3rem", height: "3rem" } }),
       " ",
-      props.label
+      props.label,
+      " v ",
+      version
     ] }),
     /* @__PURE__ */ jsx(Typography, { variant: "omega", style: { marginBottom, display }, children: "To set the location, enter the coordinates and click on 'Set Location', or search for an address and press 'Search', or navigate on the map and right-click" }),
     /* @__PURE__ */ jsxs(Box, { style: { display: "grid", gridTemplateColumns: "2fr 2fr 1fr", marginBottom }, children: [

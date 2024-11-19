@@ -4,11 +4,12 @@ const jsxRuntime = require("react/jsx-runtime");
 const react = require("react");
 const reactLeaflet = require("react-leaflet");
 const L = require("leaflet");
-const index = require("./index-ByGXgtUz.js");
+const index = require("./index-NNooBN9y.js");
 const designSystem = require("@strapi/design-system");
 require("leaflet/dist/leaflet.css");
 const _interopDefault = (e) => e && e.__esModule ? e : { default: e };
 const L__default = /* @__PURE__ */ _interopDefault(L);
+const version = "0.1.01";
 const iconUrl = "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png";
 const iconRetinaUrl = "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png";
 const shadowUrl = "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png";
@@ -86,7 +87,9 @@ const Input = (props) => {
     /* @__PURE__ */ jsxRuntime.jsxs(designSystem.Typography, { variant: "delta", style: { marginBottom, display }, children: [
       /* @__PURE__ */ jsxRuntime.jsx(index.ForwardRef, { style: { width: "3rem", height: "3rem" } }),
       " ",
-      props.label
+      props.label,
+      " v ",
+      version
     ] }),
     /* @__PURE__ */ jsxRuntime.jsx(designSystem.Typography, { variant: "omega", style: { marginBottom, display }, children: "To set the location, enter the coordinates and click on 'Set Location', or search for an address and press 'Search', or navigate on the map and right-click" }),
     /* @__PURE__ */ jsxRuntime.jsxs(designSystem.Box, { style: { display: "grid", gridTemplateColumns: "2fr 2fr 1fr", marginBottom }, children: [
