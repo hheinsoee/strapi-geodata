@@ -18,11 +18,11 @@ import 'leaflet/dist/leaflet.css';
 
 
 const customIcon = new L.Icon({
-  iconUrl: './../../../assets/marker-icon.png',
+  iconUrl: './../images/marker-icon.png',
   iconSize: [32, 32], 
   iconAnchor: [16, 32], 
   popupAnchor: [0, -32],
-  shadowUrl: './../../../assets/marker-shadow.png',
+  shadowUrl: './../images/marker-shadow.png',
   shadowSize: [41, 41], 
   shadowAnchor: [12, 41],
 });

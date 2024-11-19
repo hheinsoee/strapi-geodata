@@ -4,17 +4,17 @@ const jsxRuntime = require("react/jsx-runtime");
 const react = require("react");
 const reactLeaflet = require("react-leaflet");
 const L = require("leaflet");
-const index = require("./index-ouFEXnna.js");
+const index = require("./index-DO8hu0We.js");
 const designSystem = require("@strapi/design-system");
 require("leaflet/dist/leaflet.css");
 const _interopDefault = (e) => e && e.__esModule ? e : { default: e };
 const L__default = /* @__PURE__ */ _interopDefault(L);
 const customIcon = new L__default.default.Icon({
-  iconUrl: "./../../../assets/marker-icon.png",
+  iconUrl: "./../images/marker-icon.png",
   iconSize: [32, 32],
   iconAnchor: [16, 32],
   popupAnchor: [0, -32],
-  shadowUrl: "./../../../assets/marker-shadow.png",
+  shadowUrl: "./../images/marker-shadow.png",
   shadowSize: [41, 41],
   shadowAnchor: [12, 41]
 });

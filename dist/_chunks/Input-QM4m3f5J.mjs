@@ -2,15 +2,15 @@ import { jsxs, jsx } from "react/jsx-runtime";
 import { useState, useRef, useCallback, useEffect } from "react";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import L from "leaflet";
-import { F as ForwardRef } from "./index-D8fvH_7U.mjs";
+import { F as ForwardRef } from "./index-Bpa7Sqko.mjs";
 import { Box, Typography, TextInput, Button, JSONInput } from "@strapi/design-system";
 import "leaflet/dist/leaflet.css";
 const customIcon = new L.Icon({
-  iconUrl: "./../../../assets/marker-icon.png",
+  iconUrl: "./../images/marker-icon.png",
   iconSize: [32, 32],
   iconAnchor: [16, 32],
   popupAnchor: [0, -32],
-  shadowUrl: "./../../../assets/marker-shadow.png",
+  shadowUrl: "./../images/marker-shadow.png",
   shadowSize: [41, 41],
   shadowAnchor: [12, 41]
 });
