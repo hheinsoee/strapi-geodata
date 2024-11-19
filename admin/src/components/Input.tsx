@@ -26,9 +26,9 @@ const shadowUrl = 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png
 const customIcon = new L.Icon({
   iconUrl: iconUrl,
   iconRetinaUrl: iconRetinaUrl,
-  iconSize: [32, 32], 
-  iconAnchor: [16, 32], 
-  popupAnchor: [0, -32],
+  iconSize: [25, 41], 
+  iconAnchor: [12, 41], 
+  popupAnchor: [0, -41],
   shadowUrl: shadowUrl,
   shadowSize: [41, 41], 
   shadowAnchor: [12, 41],

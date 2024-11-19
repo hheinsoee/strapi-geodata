@@ -65,6 +65,7 @@ export default [
             "https://*.basemaps.cartocdn.com",
             "market-assets.strapi.io",
             "https://*.tile.openstreetmap.org",
+            "https://unpkg.com/leaflet@1.9.4/dist/images/",
           ],
         },
       },

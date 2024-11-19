@@ -2,19 +2,19 @@ import { jsxs, jsx } from "react/jsx-runtime";
 import { useState, useRef, useCallback, useEffect } from "react";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import L from "leaflet";
-import { F as ForwardRef } from "./index-VBZB2FIh.mjs";
+import { F as ForwardRef } from "./index-BRG6ORBJ.mjs";
 import { Box, Typography, TextInput, Button, JSONInput } from "@strapi/design-system";
 import "leaflet/dist/leaflet.css";
-const version = "0.1.01";
+const version = "0.1.02";
 const iconUrl = "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png";
 const iconRetinaUrl = "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png";
 const shadowUrl = "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png";
 const customIcon = new L.Icon({
   iconUrl,
   iconRetinaUrl,
-  iconSize: [32, 32],
-  iconAnchor: [16, 32],
-  popupAnchor: [0, -32],
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [0, -41],
   shadowUrl,
   shadowSize: [41, 41],
   shadowAnchor: [12, 41]
