@@ -4,17 +4,21 @@ const jsxRuntime = require("react/jsx-runtime");
 const react = require("react");
 const reactLeaflet = require("react-leaflet");
 const L = require("leaflet");
-const index = require("./index-DO8hu0We.js");
+const index = require("./index-ByGXgtUz.js");
 const designSystem = require("@strapi/design-system");
 require("leaflet/dist/leaflet.css");
 const _interopDefault = (e) => e && e.__esModule ? e : { default: e };
 const L__default = /* @__PURE__ */ _interopDefault(L);
+const iconUrl = "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png";
+const iconRetinaUrl = "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png";
+const shadowUrl = "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png";
 const customIcon = new L__default.default.Icon({
-  iconUrl: "./../images/marker-icon.png",
+  iconUrl,
+  iconRetinaUrl,
   iconSize: [32, 32],
   iconAnchor: [16, 32],
   popupAnchor: [0, -32],
-  shadowUrl: "./../images/marker-shadow.png",
+  shadowUrl,
   shadowSize: [41, 41],
   shadowAnchor: [12, 41]
 });

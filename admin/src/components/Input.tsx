@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import L from 'leaflet';
 import type { LatLngTuple, LeafletMouseEvent } from 'leaflet';
 import PluginIcon from './../components/PluginIcon';
+import { version } from '../package.json';
 
 import {
   Box,
@@ -122,7 +123,7 @@ const Input: React.FC<InputProps> = (props) => {
     <Box>
       <Typography variant="delta" style={{ marginBottom, display }}>
         <PluginIcon style={{width: "3rem", height:"3rem"}}/>
-        {' '}{props.label}
+        {' '}{props.label} v {version}
       </Typography>
 
       <Typography variant="omega" style={{ marginBottom, display }}>
