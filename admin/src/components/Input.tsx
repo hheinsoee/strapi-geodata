@@ -17,13 +17,14 @@ import {
 import 'leaflet/dist/leaflet.css';
 
 
-// Fix for missing marker icons
-delete L.Icon.Default.prototype._getIconUrl; // Disable the default behavior
-
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
-  iconUrl: require('leaflet/dist/images/marker-icon.png'),
-  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+const customIcon = new L.Icon({
+  iconUrl: './../../../assets/marker-icon.png',
+  iconSize: [32, 32], 
+  iconAnchor: [16, 32], 
+  popupAnchor: [0, -32],
+  shadowUrl: './../../../assets/marker-shadow.png',
+  shadowSize: [41, 41], 
+  shadowAnchor: [12, 41],
 });
 
 interface Location {
@@ -151,7 +152,7 @@ const Input: React.FC<InputProps> = (props) => {
               url={mapProps.tileUrl}
               accessToken={mapProps.tileAccessToken}
             />
-            {location && <Marker position={[location?.lat, location?.lng]} />}
+            {location && <Marker position={[location?.lat, location?.lng]} icon={customIcon} />}
           </MapContainer>
         </Box>
       </Box>
