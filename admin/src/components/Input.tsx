@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useCallback, useRef } from 'react';
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
+import L from 'leaflet';
 import type { LatLngTuple, LeafletMouseEvent } from 'leaflet';
 import PluginIcon from './../components/PluginIcon';
 
@@ -14,6 +15,16 @@ import {
 } from '@strapi/design-system';
 
 import 'leaflet/dist/leaflet.css';
+
+
+// Fix for missing marker icons
+delete L.Icon.Default.prototype._getIconUrl; // Disable the default behavior
+
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+  iconUrl: require('leaflet/dist/images/marker-icon.png'),
+  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+});
 
 interface Location {
   lat: number;
