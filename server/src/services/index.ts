@@ -1,5 +1,11 @@
 import service from './service';
 
-export default {
+interface Services {
+  service: any;
+}
+
+const services: Services = {
   service,
 };
+
+export default services;

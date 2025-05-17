@@ -157,7 +157,7 @@ const Input: React.FC<InputProps> = (props) => {
             <TileLayer
               attribution={mapProps.tileAttribution}
               url={mapProps.tileUrl}
-              accessToken={mapProps.tileAccessToken}
+              // accessToken={mapProps.tileAccessToken}
             />
             {location && <Marker position={[location?.lat, location?.lng]} icon={customIcon} />}
           </MapContainer>

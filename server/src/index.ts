@@ -16,7 +16,20 @@ import policies from './policies';
 import routes from './routes';
 import services from './services';
 
-export default {
+interface Plugin {
+  register: any;
+  bootstrap: any;
+  destroy: any;
+  config: any;
+  controllers: any;
+  routes: any;
+  services: any;
+  contentTypes: any;
+  policies: any;
+  middlewares: any;
+}
+
+const plugin: Plugin = {
   register,
   bootstrap,
   destroy,
@@ -28,3 +41,5 @@ export default {
   policies,
   middlewares,
 };
+
+export default plugin;

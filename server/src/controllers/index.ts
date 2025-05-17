@@ -1,5 +1,11 @@
 import controller from './controller';
 
-export default {
+interface Controllers {
+  controller: any;
+}
+
+const controllers: Controllers = {
   controller,
 };
+
+export default controllers;

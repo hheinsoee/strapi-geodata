@@ -64,7 +64,7 @@ const service = ({ strapi }) => ({
 const services = {
   service
 };
-const index = {
+const plugin = {
   register,
   bootstrap,
   destroy,
@@ -77,5 +77,5 @@ const index = {
   middlewares
 };
 export {
-  index as default
+  plugin as default
 };
